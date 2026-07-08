@@ -5,42 +5,81 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet" />
-  <link href="assets/css/newstyle.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet" />
   <title>OptionallyBlueStudios | S.C.A.N.</title>
 </head>
 <body>
-  <main>
-    <section class="main-texts">
-      <h3>Coming soon... <span>S.C.A.N.</span></h3>
-      <h1>S.C.A.N.</h1>
-      <p>An OptionallyBlueStudios Horror Game..</p>
+  <main class="hero" id="top">
+    <nav class="topbar" aria-label="Section links">
+      <a href="#top" class="topbar-link">Home</a>
+      <a href="#where-to-get" class="topbar-link">Platforms</a>
+      <a href="#community" class="topbar-link">Community</a>
+      <a href="#news" class="topbar-link">News</a>
+      <a href="#status" class="topbar-link">Project Status</a>
+      <a href="#spoilers" class="topbar-link">Spoilers</a>
+      <a href="#team" class="topbar-link">The Team</a>
+    </nav>
+
+    <section class="hero-content">
+      <div class="main-texts">
+        <h3>Coming soon...</h3>
+        <h1>S.C.A.N.</h1>
+        <p>An OptionallyBlueStudios Horror Game..</p>
+      </div>
+
+      <div class="hero-details">
+        <p>Game made with Unreal Engine</p>
+        <p>This is the OFFICIAL Website. No other sites are official unless they are linked on this page.</p>
+      </div>
     </section>
 
-    <section class="links">
-      <ul>
-        <li><a href="#status" class="btn-read-more">Project Status</a></li>
-        <li><a href="#spoilers" class="btn-play-now">Spoilers</a></li>
-        <li><a href="#team" class="btn-play-now">The Team</a></li>
-      </ul><br>
-      <p>Game made with Unreal Engine<br><br>This is the OFFICIAL Website. <br>No other sites are official unless they are linked on this page.</p>
+    <section class="hero-cta" aria-label="Game links">
+      <a href="https://optionallyblue.itch.io/scangame" target="_blank" rel="noreferrer" class="cta-link cta-itch">Get it on Itch</a>
+      <a href="https://store.steampowered.com/search/?term=Optionally%20Blue%20Studios" target="_blank" rel="noreferrer" class="cta-link cta-steam">Get it on Steam</a>
+      <a href="https://optb.short.gy/discord" target="_blank" rel="noreferrer" class="cta-link cta-discord">Discord</a>
+      <a href="https://www.youtube.com/watch?v=lvcYIezq-To" target="_blank" rel="noreferrer" class="cta-link cta-trailer">Watch Trailer</a>
     </section>
+
   </main>
 
-  <iframe frameborder="0" src="https://itch.io/embed/3865291?dark=true" width="552" height="167"><a href="https://optionallyblue.itch.io/scangame">S.C.A.N. - The Game by Optionally Blue Studios</a></iframe>
+  <section class="spoiler-content where-to-get-section" id="where-to-get">
+    <h2>Platforms</h2>
+    <p>Find S.C.A.N. on the platforms below.</p>
+    <div class="where-card">
+      <iframe title="S.C.A.N. on itch.io" frameborder="0" src="https://itch.io/embed/3865291?dark=true" width="552" height="167"><a href="https://optionallyblue.itch.io/scangame">S.C.A.N. - The Game by Optionally Blue Studios</a></iframe>
+    </div>
+  </section>
+
+  <section class="spoiler-content community-section" id="community">
+    <h2>Community</h2>
+    <p>Join the conversation, share feedback, and stay connected with the S.C.A.N. community.</p>
+    <div class="hero-cta community-links">
+      <a href="https://optb.short.gy/discord" target="_blank" rel="noreferrer" class="cta-link cta-discord">Join Discord</a>
+      <a href="https://github.com/OptionallyBlueStudios/scan-website/discussions" target="_blank" rel="noreferrer" class="cta-link">GitHub Community</a>
+    </div>
+  </section>
+
+  <section class="spoiler-content news-section" id="news">
+    <h2>Latest News</h2>
+    <p>Fresh updates from the S.C.A.N. development log on itch.io.</p>
+    <div id="itch-news-list" class="news-list" aria-live="polite">
+      <p>Loading latest news…</p>
+    </div>
+  </section>
 
   <div class="spoiler-content" id="status">
     <h2>Project status</h2>
-    <h3>In the works....</h3>
+    <h3>In the works...</h3>
   </div>
 
   <div class="spoiler-content" id="team">
     <h2>Our team</h2>
     <ul>
-        <li>Chille | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg></a> | Project Lead/Producer, Developer, Artist and 3D Artist, Writer, Pixel Artist, Voice Actor</li> <!-- CHILLE -->
-        <li>Stuf_y | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg></a> | Lead Developer, Graphic Design, Digital Artist, Editor, Sound Design, Design, Animator and Planner, 3D Artist, Voice Actor, Executive Producer, Writer</li> <!-- STUFY -->
-        <li>Super777 (AlternateQubit) | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg></a> | Planner, Pixel Artist and Writer</li> <!-- SUPER -->
-        <li>Orange10910 | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg></a> | 3D Artist, Planner</li> <!-- ORANGE -->
-        <li>Uno | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16"><path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/></svg></a> | Development Progress Manager</li> <!-- UNO -->
+        <li>Chille | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><img src="assets/svg/discord.svg" alt="Discord" /></a> | Project Lead/Producer, Developer, Artist and 3D Artist, Writer, Pixel Artist, Voice Actor</li> <!-- CHILLE -->
+        <li>Stuf_y | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><img src="assets/svg/discord.svg" alt="Discord" /></a> | Lead Developer, Graphic Design, Digital Artist, Editor, Sound Design, Design, Animator and Planner, 3D Artist, Voice Actor, Executive Producer, Writer</li> <!-- STUFY -->
+        <li>Super777 (AlternateQubit) | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><img src="assets/svg/discord.svg" alt="Discord" /></a> | Planner, Pixel Artist and Writer</li> <!-- SUPER -->
+        <li>Orange10910 | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><img src="assets/svg/discord.svg" alt="Discord" /></a> | 3D Artist, Planner</li> <!-- ORANGE -->
+        <li>Uno | <a class="botd-link" style="color: white; vertical-align: middle;" href="https://optb.short.gy/discord"><img src="assets/svg/discord.svg" alt="Discord" /></a> | Development Progress Manager</li> <!-- UNO -->
     </ul><br>
     <p>Our team's discord profiles are protected. You must join our discord server to have access. <br>Our team does not always accept DMs so please try not to use DMs if possible.</p>
   </div>
@@ -83,112 +122,78 @@
     <br><p>Hoot Hoot</p>
     <!-- HAHA GITHUB PAGES!!! USE MY UPDATED JS!! -->
   </div>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> OptionallyBlueStudios</p>
+    <div class="footer-links">
+      <a href="https://optionallyblue.itch.io/scangame" target="_blank" rel="noreferrer">Itch.io</a>
+      <a href="https://store.steampowered.com/search/?term=Optionally%20Blue%20Studios" target="_blank" rel="noreferrer">Steam</a>
+      <a href="https://optb.short.gy/discord" target="_blank" rel="noreferrer">Discord</a>
+      <a href="https://www.youtube.com/watch?v=lvcYIezq-To" target="_blank" rel="noreferrer">Trailer</a>
+    </div>
+  </footer>
+
   <script>
-    class SpoilerImg extends HTMLElement {
-      connectedCallback() {
-        const src = this.getAttribute("src");
-        const alt = this.getAttribute("alt") || "Spoiler image — click to reveal";
-        const href = this.getAttribute("href"); // Get the href attribute
-        // Check if this spoiler is marked as final via attribute
-        const isFinal = this.hasAttribute("final") && this.getAttribute("final") === "true";
-        // Check if this spoiler is marked as airender via attribute
-        const isAiRender = this.hasAttribute("airender") && this.getAttribute("airender") === "true";
-        
-        // Update the label based on whether it's a link or spoiler reveal
-        const labelText = href ? "Click to open link" : "Spoiler — Click to reveal";
-        const ariaLabel = href ? "Link. Click to open." : "Spoiler. Click to reveal.";
-        
-        this.outerHTML = `
-          <div class="spoiler-container is-hidden ${isFinal ? "final-spoiler" : ""} ${isAiRender ? "airender-spoiler" : ""}" ${href ? `data-href="${href}"` : ""}>
-            <img src="${src}" alt="${alt}" class="spoiler-img">
-            <div class="spoiler-overlay" role="button" tabindex="0" aria-pressed="false" aria-label="${ariaLabel}">
-              <svg width="48" height="48" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <g fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                  ${href ? 
-                    // Link icon
-                    `<path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
-                     <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>` :
-                    // Eye icon (original spoiler icon)
-                    `<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/>
-                     <circle cx="12" cy="12" r="3"/>
-                     <path d="M6 6l12 12"/>`
-                  }
-                </g>
-              </svg>
-              <div class="label">${labelText}</div>
-            </div>
-          </div>
-        `;
-      }
-    }
-    
-    customElements.define("spoiler-img", SpoilerImg);
-    
-    document.addEventListener("click", e => {
-      const overlay = e.target.closest(".spoiler-overlay");
-      if (!overlay) return;
-      
-      const container = overlay.closest(".spoiler-container");
-      const href = container.getAttribute("data-href");
-      
-      if (href) {
-        // If there's a link, navigate to it
-        window.open(href, '_blank');
-      } else {
-        // Original spoiler reveal behavior
-        container.classList.remove("is-hidden");
-        overlay.classList.add("hidden");
-        overlay.setAttribute("aria-pressed", "true");
-      }
-    });
-    
-    document.addEventListener("keydown", e => {
-      if ((e.key === "Enter" || e.key === " ") && e.target.classList.contains("spoiler-overlay")) {
-        e.preventDefault();
-        e.target.click();
-      }
-    });
-    
-    // Fade out background overlay on scroll
-    const bigOverlay = document.getElementById("overlay");
-    if (bigOverlay) {
-      window.addEventListener("scroll", () => {
-        let scrollY = window.scrollY;
-        let fadePoint = window.innerHeight * 0.7;
-        if (scrollY > fadePoint) {
-          bigOverlay.style.opacity = Math.max(1 - (scrollY - fadePoint) / 300, 0);
-        } else {
-          bigOverlay.style.opacity = 1;
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const newsContainer = document.getElementById("itch-news-list");
+    if (newsContainer) {
+      const itchRssUrl = "https://optionallybluestudios.itch.io/scangame/devlog.rss";
+      const proxiedUrl = `https://proxy.corsfix.com/?https://optionallybluestudios.itch.io/scangame/devlog.rss`;
+
+      const escapeHtml = (value) => value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+
+      const renderNews = (posts) => {
+        if (!posts.length) {
+          newsContainer.innerHTML = '<p class="news-error">No recent devlog posts were found.</p>';
+          return;
         }
-      });
+
+        newsContainer.innerHTML = posts.slice(0, 3).map((post) => `
+          <article class="news-card">
+            <h3><a href="${post.url}" target="_blank" rel="noreferrer">${escapeHtml(post.title)}</a></h3>
+            <p class="news-meta">${escapeHtml(post.date || "itch.io")}</p>
+            <p>${escapeHtml(post.excerpt || "Read the full update on itch.io.")}</p>
+          </article>
+        `).join("");
+      };
+
+      async function fetchDevlog() {
+        try {
+          const response = await fetch(proxiedUrl);
+          if (!response.ok) throw new Error("Network response error.");
+
+          const xmlText = await response.text();
+          const parser = new DOMParser();
+          const xmlDoc = parser.parseFromString(xmlText, "text/xml");
+          const items = Array.from(xmlDoc.querySelectorAll("item"));
+
+          const posts = items.map((item) => {
+            const title = item.querySelector("title")?.textContent?.trim() || "Untitled update";
+            const url = item.querySelector("link")?.textContent?.trim() || "";
+            const date = item.querySelector("pubDate")?.textContent?.trim() || "";
+            const description = item.querySelector("description")?.textContent?.trim() || "";
+            const excerpt = description
+              .replace(/<[^>]+>/g, " ")
+              .replace(/\s+/g, " ")
+              .trim();
+
+            return { title, url, date, excerpt };
+          });
+
+          renderNews(posts);
+        } catch (error) {
+          console.error("Failed to fetch itch.io devlog feed:", error);
+          newsContainer.innerHTML = '<p class="news-error">Unable to load the latest itch.io news right now.</p>';
+        }
+      }
+
+      fetchDevlog();
     }
-    
-    // Inject CSS for final-spoiler and airender-spoiler into the page
-    const style = document.createElement("style");
-    style.textContent = `
-      .final-spoiler .spoiler-img {
-        position: relative;
-        border: 4px solid transparent;
-        border-radius: 12px;
-        background-image: linear-gradient(white, white),
-                          linear-gradient(45deg, gold, orange, gold);
-        background-origin: border-box;
-        background-clip: content-box, border-box;
-        animation: sparkleBorder 2s infinite;
-        box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
-      }
-      @keyframes sparkleBorder {
-        0%   { box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 255, 0, 0.3); }
-        50%  { box-shadow: 0 0 20px rgba(255, 215, 0, 0.9), 0 0 40px rgba(255, 255, 0, 0.5); }
-        100% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.6), 0 0 20px rgba(255, 255, 0, 0.3); }
-      }
-      .airender-spoiler .spoiler-img {
-        border: 4px solid #a464c2; /* Solid purple border */
-        border-radius: 12px;
-        box-shadow: 0 0 15px rgba(164, 100, 194, 0.7); /* Purple glow */
-      }
-    `;
-    document.head.appendChild(style);
   </script>
 </body>
 </html>

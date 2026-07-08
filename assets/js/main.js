@@ -105,3 +105,59 @@ style.textContent = `
   }
 `;
 document.head.appendChild(style);
+
+const newsContainer = document.getElementById("itch-news-list");
+if (newsContainer) {
+  const feedUrl = "https://optionallybluestudios.itch.io/scangame/devlog.rss";
+
+  const escapeHtml = (value) => value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+
+  const renderNews = (posts) => {
+    if (!posts.length) {
+      newsContainer.innerHTML = '<p class="news-error">No recent devlog posts were found.</p>';
+      return;
+    }
+
+    newsContainer.innerHTML = posts.slice(0, 3).map((post) => `
+      <article class="news-card">
+        <h3><a href="${post.url}" target="_blank" rel="noreferrer">${escapeHtml(post.title)}</a></h3>
+        <p class="news-meta">${escapeHtml(post.date || "itch.io")}</p>
+        <p>${escapeHtml(post.excerpt || "Read the full update on itch.io.")}</p>
+      </article>
+    `).join("");
+  };
+
+  const parseRssFeed = (xmlText) => {
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(xmlText, "application/xml");
+    const items = Array.from(xml.querySelectorAll("item"));
+
+    return items.map((item) => {
+      const title = item.querySelector("title")?.textContent?.trim() || "Untitled update";
+      const url = item.querySelector("link")?.textContent?.trim() || "";
+      const date = item.querySelector("pubDate")?.textContent?.trim() || "";
+      const description = item.querySelector("description")?.textContent?.trim() || "";
+      const excerpt = description
+        .replace(/<[^>]+>/g, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      return { title, url, date, excerpt };
+    });
+  };
+
+  fetch(feedUrl)
+    .then((response) => {
+      if (!response.ok) throw new Error("Unable to load news feed");
+      return response.text();
+    })
+    .then((text) => renderNews(parseRssFeed(text)))
+    .catch(() => {
+      newsContainer.innerHTML = '<p class="news-error">Unable to load the latest itch.io news right now.</p>';
+    });
+}
